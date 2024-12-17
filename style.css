@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("https://media.istockphoto.com/id/1431931532/photo/circuit-board-background-computer-data-technology-artificial-intelligence.jpg?s=612x612&w=0&k=20&c=2N5ovVn8Hu1c1evlUbzF-Al539kVNYv2mz2qJURPpCs=");
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header h1{
+    font-size: 150px;
+    color: rgb(172, 167, 167);
+    padding-bottom: 50px;
+    font-weight: 800px;
+    text-shadow: 4px 4px 4px rgb(0, 0, 0);
+}
+.header h2{
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    text-shadow: 4px 4px 4px rgb(134, 129, 129);
+}
+.speech{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.speech h4{
+    font-size: 30px;
+    color: rgb(162, 160, 160);
+    font-weight: 800;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+.speechbutton{
+    background-color: rgb(74, 74, 74);
+    border: none;
+    width: 400px;
+    height: 150px;
+    cursor: pointer;
+    border-radius: 50px;
+    
+}
+
+.speechbutton:hover{
+    background-color: rgb(100, 100, 100);
+    transform:scale(1.01);
+}
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 255, 0, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 30px rgba(0, 255, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 255, 0, 0);
+    }
+}
+
+.speechbutton.listening {
+    animation: pulse 2s infinite;
+    background-color: rgba(36, 8, 136, 0.399); 
+    transform: scale(1.05); 
+    color: rgb(0, 0, 0);
+}
